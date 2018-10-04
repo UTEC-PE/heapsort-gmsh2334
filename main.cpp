@@ -46,7 +46,8 @@ int generateRandomInt(int min, int max) {
 
 
 void printArray(int *array, size_t size) {
-    for (int i = 0; i < size; i++)
+    int a=size;
+    for (int i = 0; i < a; i++)
         cout << array[i] << " ";
     cout << "\n\n";
 }
@@ -87,7 +88,8 @@ void heapsort(int* array, size_t size) {
 }
 
 bool validate(const int* array, size_t size) {
-    for (int i = 0; i < size - 1; i++) {
+    int a=size;
+    for (int i = 0; i < a - 1; i++) {
         if (array[i] > array[i + 1]) {
             return false;
         }
